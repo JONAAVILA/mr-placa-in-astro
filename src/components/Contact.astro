@@ -35,22 +35,20 @@
         <p>EMAIL: MRPLACASANTIHUMEDAD@GMAIL.COM</p>
         <p>AVENIDA LAMADRID 3346, 1879 QUILMES <br/> PROVINCIA DE BUENOS AIRES, ARGENTINA</p>
     </div>
-    <div>
-        <span>
-            <svg width="50"  
-                 height="50"  
-                 viewBox="0 0 24 24"  
-                 fill="none"  
-                 stroke="currentColor"  
-                 stroke-width="2"  
-                 stroke-linecap="round"  
-                 stroke-linejoin="round"
-                 >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-            </svg>
-            011 5615 2426
-        </span>
+    <div class="whatsapp" >
+        <svg width="50"  
+                height="50"  
+                viewBox="0 0 24 24"  
+                fill="none"  
+                stroke="currentColor"  
+                stroke-width="2"  
+                stroke-linecap="round"  
+                stroke-linejoin="round"
+                >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+        </svg>
+        <p>011 5615 2426</p>
     </div>
 </section>
 
@@ -63,12 +61,26 @@
         width: 100%;
         background-color: #373a3c;
     }
-    svg{
+    p{
         color: #ffff;
+    }
+    span{
+        color: #ffff;
+    }
+    svg{
+        border-radius: 50%;
+        padding: 5px;
+        background-color: #ffff;
     }
     img{
         width: 30px;
         height: 30px;
     }
-
+    .whatsapp{
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 2rem;
+        }
+    }
 </style>
