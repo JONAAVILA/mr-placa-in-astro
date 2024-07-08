@@ -2,12 +2,12 @@
 ---
 
 <section>
-    <div class="cielorraso" >
+    <div class="ceiling" >
         <h1>Cielorrasos Desmontables</h1>
-        <div class="ciellorraso_image" >
+        <div class="ceiling_image" >
             <img src="../../services/Mr-Placa-Antihumedad-Placas-de-Yeso-Antihumedad-Trabajo-Realizado.webp" alt="Fabricamos placas antihumedad">
         </div>
-        <article class="article_cielorraso" >
+        <article class="article_ceiling" >
             <h2>¿Qué podemos ofrecerte?</h2>
             <h3>Tenemos un amplia trayectoria en placas antihumedad</h3>
             <p>
@@ -20,24 +20,25 @@
             </p>
         </article>
     </div>
-    <div>
-        <img src="" alt="">
+    <div class="info" >
+        <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Modelo-Sol.webp" alt="">
         <article>
             <p>Consultanos por whatsapp o por nuestras redes para más modelos de cielorraso desmontables</p>
         </article>
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Cielorraso-Desmontables-Modelo-Cuadrado.webp" alt="">
+        <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Cielorraso-Desmontables-Modelo-Arenado.webp" alt="">
     </div>
 </section>
 
 <style>
     section{
-        margin: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .cielorraso{
+    .ceiling{
         position: relative;
         display: flex;
         justify-content: center;
@@ -45,16 +46,16 @@
         h1{
             position: absolute;
             color: #fff;
-            font-size: 3rem;
+            font-size: 2.5rem;
             z-index: 2;
             left: 10px;
             bottom: 0;
         }
     }
-    .ciellorraso_image{
+    .ceiling_image{
         position: relative;
         box-sizing: border-box;
-        min-width: 70%;
+        min-width: 60%;
         height: 100%  ;
         img{
             width: 100%;
@@ -62,7 +63,7 @@
             display: block;
         }
     }
-    .ciellorraso_image::after{
+    .ceiling_image::after{
         position: absolute;
         z-index: 1;
         content: " ";
@@ -73,7 +74,22 @@
         background-color: #000000b9;
         opacity: .6;
     } 
-    .article_cielorraso{
+    .article_ceiling{
         padding: 10px;
+    }
+    .info{
+        display: flex;
+        width: 80%;
+        img{
+            width: 25%;
+        }
+        article{
+            display: grid;
+            align-items: center;
+            text-align: center;
+            p{
+                padding-inline: 10px;
+            }
+        }
     }
 </style>
