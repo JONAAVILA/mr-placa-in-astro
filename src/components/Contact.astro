@@ -2,7 +2,7 @@
 ---
 
 <section>
-    <div>
+    <div class="icons" >
         <svg width="24"
              height="24"  
              viewBox="0 0 24 24"  
@@ -30,10 +30,10 @@
             <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
             <path d="M16.5 7.5l0 .01" />
         </svg>
-    </div>
-    <div>
-        <p>EMAIL: MRPLACASANTIHUMEDAD@GMAIL.COM</p>
-        <p>AVENIDA LAMADRID 3346, 1879 QUILMES <br/> PROVINCIA DE BUENOS AIRES, ARGENTINA</p>
+        <div>
+            <p>EMAIL: MRPLACASANTIHUMEDAD@GMAIL.COM</p>
+            <p>AVENIDA LAMADRID 3346, 1879 QUILMES <br/> PROVINCIA DE BUENOS AIRES, ARGENTINA</p>
+        </div>
     </div>
     <div class="whatsapp" >
         <svg width="50"  
@@ -55,11 +55,11 @@
 <style>
     section{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 100px;
         width: 100%;
-        background-color: #373a3c;
+        background-color: #5a5a5a;
     }
     p{
         color: #ffff;
@@ -76,11 +76,24 @@
         width: 30px;
         height: 30px;
     }
+    .icons{
+        display: flex;
+        align-items: center;
+        svg{
+            margin-right: 10px;
+        }
+        p{
+            margin: 0;
+        }
+    }
     .whatsapp{
         display: flex;
         align-items: center;
+        svg{
+            margin-right: 10px;
+        }
         p{
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
 </style>
