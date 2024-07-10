@@ -21,12 +21,34 @@
         </article>
     </div>
     <div class="info" >
-        <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Modelo-Sol.webp" alt="">
+        <div>
+            <h3>Sol</h3>
+            <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Modelo-Sol.webp" alt="">
+        </div>
         <article>
             <p>Consultanos por whatsapp o por nuestras redes para más modelos de cielorraso desmontables</p>
         </article>
-        <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Cielorraso-Desmontables-Modelo-Cuadrado.webp" alt="">
-        <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Cielorraso-Desmontables-Modelo-Arenado.webp" alt="">
+        <div>
+            <h3>Cuadrado</h3>
+            <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Cielorraso-Desmontables-Modelo-Cuadrado.webp" alt="">
+        </div>
+        <div>
+            <h3>Arenado</h3>
+            <img src="../../services/Mr-Placa-Antihumedad-en-la-Ciudad-de-Quilmes-Cielorraso-Desmontables-Modelo-Arenado.webp" alt="">
+        </div>
+    </div>
+    <div class="coatings" >
+        <article class="article_coatings" >
+            <h2>¿Ténes dudas si es una buena opción?</h2>
+            <h3>Contamos con garantía</h3>
+            <p>
+                Mr. Placa le ofrece una garantía de 10 años desde el momento de la instalación
+            </p>
+        </article>
+        <h1>Revestimiento de Paredes</h1>
+        <div class="coatings_image" >
+            <img src="../../services/Mr-Placa-Antihumedad-Placas-de-Yeso-Antihumedad-Trabajo-Realizado.webp" alt="Fabricamos placas antihumedad">
+        </div>
     </div>
 </section>
 
@@ -80,8 +102,20 @@
     .info{
         display: flex;
         width: 80%;
-        img{
-            width: 25%;
+        div{
+            width: 55%;
+            position: relative;
+            box-sizing: border-box;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            h3{
+                position: absolute;
+                left: 10px;
+                bottom: 0;
+            }
         }
         article{
             display: grid;
@@ -91,5 +125,45 @@
                 padding-inline: 10px;
             }
         }
+    }
+    .coatings{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        text-align: right;
+        h1{
+            position: absolute;
+            color: #fff;
+            font-size: 2.5rem;
+            z-index: 2;
+            right: 10px;
+            bottom: 0;
+        }
+    }
+    .coatings_image{
+        position: relative;
+        box-sizing: border-box;
+        min-width: 60%;
+        height: 100%  ;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    .coatings_image::after{
+        position: absolute;
+        z-index: 1;
+        content: " ";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: #000000b9;
+        opacity: .6;
+    }
+    .article_coatings{
+        padding: 10px;
     }
 </style>
