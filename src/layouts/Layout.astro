@@ -18,6 +18,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<footer>Copyright © Mr placa 2024 | Powered by Jonatan Avila Desarrollo Web</footer>
 	</body>
 </html>
 <style is:global>
@@ -79,5 +80,9 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+	footer{
+		display: grid;
+		justify-content: center;
 	}
 </style>
