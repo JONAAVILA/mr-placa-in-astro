@@ -6,25 +6,44 @@ const USER_ID = import.meta.env.USER_ID
 ---
 
 <section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52464.10116758104!2d-58.302015000000004!3d-34.730235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32df79f4504b7%3A0x1fdc9f040456afa3!2sMr%20Placa%20antihumedad!5e0!3m2!1ses!2sus!4v1720795956690!5m2!1ses!2sus"
-            width="800" 
-            height="350" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <Form servisId={SERVICE_ID}
-          templateId={TEMPLATE_ID} 
-          userId={USER_ID} 
-          />
+    <dir class="container" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52464.10116758104!2d-58.302015000000004!3d-34.730235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32df79f4504b7%3A0x1fdc9f040456afa3!2sMr%20Placa%20antihumedad!5e0!3m2!1ses!2sus!4v1720795956690!5m2!1ses!2sus"
+                width="800" 
+                height="350" 
+                style="border:0; filter:grayscale(100%);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="container_form" >
+            <Form servisId={SERVICE_ID}
+                  templateId={TEMPLATE_ID} 
+                  userId={USER_ID} 
+                  />
+        </div>
+    </dir>
 </section>
 
 <style>
     section{
         display: flex;
+        bor
         justify-content: center;
         align-items: center;
         width: 100;
+        margin-top: 50px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .container_form{
+        height: 350px;
+        width: 250px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #709b91;
     }
 </style>
