@@ -10,6 +10,8 @@ section{
     display: flex;
     justify-content: center;
     width: 80%;
+    color: #fff;
+    background-color: #709b91;
     h1{
         position: absolute;
         color: #fff;
@@ -66,6 +68,8 @@ section{
         display: grid;
         align-items: center;
         text-align: center;
+        color: #fff;
+        background-color: #034a3b;
         p{
             padding-inline: 10px;
         }
@@ -77,6 +81,8 @@ section{
     justify-content: center;
     width: 80%;
     text-align: right;
+    color: #fff;
+    background-color: #709b91;
     h1{
         position: absolute;
         color: #fff;

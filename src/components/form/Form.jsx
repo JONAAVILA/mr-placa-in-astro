@@ -165,7 +165,7 @@ export default function Form({servisId,templateId,userId}){
                 </textarea>
                 {errors && <p>{errors.message}</p>}
                 <div className='box_button' >
-                    <button onClick={handleSubmit} >ENVIAR </button>
+                    <button onClick={handleSubmit} >Enviar </button>
                 </div>
             </form>
         </div>
