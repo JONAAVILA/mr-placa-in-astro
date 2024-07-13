@@ -25,31 +25,31 @@ export default function Form({servisId,templateId,userId}){
             [id]: validateError ? validateError[id] : null
         }))
 
-        if(id === 'name' && validateError){
+        if(id === 'name' && validateError && !alert){
             setInputValue(prevSetInputValue => ({
                 ...prevSetInputValue,
                 name:value
             }))
         }
-        if(id === 'surname' && validateError){
+        if(id === 'surname' && validateError && !alert){
             setInputValue(prevSetInputValue => ({
                 ...prevSetInputValue,
                 surname:value
             }))
         }
-        if(id === 'email' && validateError){
+        if(id === 'email' && validateError && !alert){
             setInputValue(prevSetInputValue => ({
                 ...prevSetInputValue,
                 email:value
             }))
         }
-        if(id === 'phone' && validateError){
+        if(id === 'phone' && validateError && !alert){
             setInputValue(prevSetInputValue => ({
                 ...prevSetInputValue,
                 phone:value
             }))
         }
-        if(id === 'message' && validateError){
+        if(id === 'message' && validateError && !alert){
             setInputValue(prevSetInputValue => ({
                 ...prevSetInputValue,
                 message:value

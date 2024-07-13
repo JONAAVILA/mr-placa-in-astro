@@ -24,6 +24,12 @@
         min-width: 300px;
         max-width: 300px;
     }
+    p{
+        color: #ee6868;
+        margin: 0 0 5px 0;
+        height: 20px;
+        font-size: .7rem;
+    }
 }
 .alert{
     position: absolute;
