@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const date = new Date();
+const currentYear = date.getFullYear();
 ---
 
 <!doctype html>
@@ -18,7 +20,15 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
-		<footer>Copyright © Mr placa 2024 | Powered by Jonatan Avila Desarrollo Web</footer>
+		<footer>Copyright © Mr placa {currentYear} | 
+			<a href="https://www.google.com/search?q=Jonatan+Avila+Desarrollador+Web+Full+Stack+-+Dise%C3%B1ador+Web&stick=H4sIAAAAAAAA_-NgU1I1qLA0TTQ2SktOSjFPNktLNDG3MqhISTE1NzA3tDA1MzdMszRIXcRq7ZWfl1iSmKfgWJaZk6jgklqcWFSUn5OTmJJfpBCemqTgVpqToxBckpicraCr4JJZnHp4I0wOALOQqlZnAAAA&hl=es-419&mat=CVgOLeHDGpajElYBEKoLaTXz9HrRciL9WCZANH9iIwhEO6RBEFETBsH2QydaTZOif5YpsYk_ty1_zztwhlTG7j6qwFvQmWkrAHUpG8oB0aPoZDe2XA-rL4o0vLvDRZOWlg&authuser=0"
+			   target='_blank'
+			   rel='noreferrer'
+			   aria-label="Contacto del Desarrollador"
+			   >
+			   Powered by Jonatan Avila Desarrollo Web
+			</a>
+		</footer>
 	</body>
 </html>
 <style is:global>
@@ -53,6 +63,11 @@ const { title } = Astro.props;
 		text-decoration: none;
 		color: #5a5a5a;
 		font-weight: 600;
+		transition: all ease 200ms;
+		margin-inline: 2px;
+	}
+	a:hover{
+		color: #0c5d50;
 	}
 	p{
 		font-size: .9rem;
@@ -82,7 +97,8 @@ const { title } = Astro.props;
 			monospace;
 	}
 	footer{
-		display: grid;
+		display: flex;
 		justify-content: center;
+		font-weight: 500;
 	}
 </style>
