@@ -1,0 +1,60 @@
+.carousel_services {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel_services::before{
+  z-index: 1;
+  position: absolute;
+  content: " ";
+  background-color: rgba(5, 5, 5, 0.185);
+}
+
+.carousel_services::before{
+  z-index: 2;
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../public/slider/Frame-12.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+.slide-container_services {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+  
+.slide_services {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s, transform 1s;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 1s;
+}
