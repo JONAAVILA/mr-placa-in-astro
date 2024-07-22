@@ -117,3 +117,19 @@
 .article_coatings{
     padding: 10px;
 }
+
+@media 
+    (width < 480px){
+        .ceiling{
+            display: block;
+        }
+        .info{
+            display: block;
+            div{
+                width: 100%;
+            }
+        }
+        .article{
+            height: 300px;
+        }
+    }
