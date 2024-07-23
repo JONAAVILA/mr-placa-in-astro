@@ -76,8 +76,25 @@ import Slider from './slider/Slider';
         width: 170px;
     }
     .whatsapp{
+        z-index: 10;
         position:fixed;
         bottom: 20px;
         right: 20px;
     }
+    @media
+        (width < 480px){
+            img{
+                left: 10px;
+                width: 120px;
+            }
+            div{
+                margin-left: 10px;
+            }
+            h1{
+                font-size: 2rem;
+            }
+            h2{
+                width: 75%;
+            }
+        }
 </style>
