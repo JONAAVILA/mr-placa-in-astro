@@ -78,7 +78,7 @@ export default function Form({servisId,templateId,userId}){
                 userId
             ).then((response) => {
               if(response.status === 200){
-                  setAlert('📧 Tu consulta se envió con exito!.. No olvides de revisar tu casilla de span 😉')
+                  setAlert('📧 Tu consulta se envió con exito!... No olvides de revisar tu casilla de span 😉')
               }
             }).catch((error) => {
                   setAlert('Algo salió mal ⚠️')
