@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     left: 50%;
     right: 50%;
     width: 400px;
@@ -43,6 +44,18 @@
     border-radius: 5px;
     background-color: #709b91;
     transform: translate(-50%,50%);
+    svg{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        transition: all ease 200ms;
+    }
+    p{
+        text-wrap: balance;
+    }
+}
+.alert svg:hover{
+    transform: rotate(45deg);
 }
 .box_button{
     display: grid;
