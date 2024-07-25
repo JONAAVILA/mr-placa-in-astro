@@ -20,7 +20,8 @@ const currentYear = date.getFullYear();
 	</head>
 	<body>
 		<slot />
-		<footer>Copyright © Mr placa {currentYear} | 
+		<footer>
+			<p>Copyright © Mr placa {currentYear} | </p>
 			<a href="https://www.google.com/search?q=Jonatan+Avila+Desarrollador+Web+Full+Stack+-+Dise%C3%B1ador+Web&stick=H4sIAAAAAAAA_-NgU1I1qLA0TTQ2SktOSjFPNktLNDG3MqhISTE1NzA3tDA1MzdMszRIXcRq7ZWfl1iSmKfgWJaZk6jgklqcWFSUn5OTmJJfpBCemqTgVpqToxBckpicraCr4JJZnHp4I0wOALOQqlZnAAAA&hl=es-419&mat=CVgOLeHDGpajElYBEKoLaTXz9HrRciL9WCZANH9iIwhEO6RBEFETBsH2QydaTZOif5YpsYk_ty1_zztwhlTG7j6qwFvQmWkrAHUpG8oB0aPoZDe2XA-rL4o0vLvDRZOWlg&authuser=0"
 			   target='_blank'
 			   rel='noreferrer'
@@ -100,5 +101,22 @@ const currentYear = date.getFullYear();
 		display: flex;
 		justify-content: center;
 		font-weight: 500;
+		width: 100%;
+		height: 30px;
 	}
+	@media
+		(width < 480px){
+			footer{
+				display: block;
+				p{
+					display: flex;
+					justify-content: center;
+				}
+				a{
+					display: flex;
+					justify-content: center;
+					padding-bottom: 5px;
+				}
+			}
+		}
 </style>

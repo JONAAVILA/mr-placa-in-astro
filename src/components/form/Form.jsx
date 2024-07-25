@@ -99,7 +99,7 @@ export default function Form({servisId,templateId,userId}){
     }
 
     return(
-        <div>
+        <div className='container_form' >
             <h2>Consultas</h2>
             {alert && <div className='alert' >
                         <p>{alert}</p>
